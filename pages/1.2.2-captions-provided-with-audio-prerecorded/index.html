@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Keyboard focus does not get trapped - NHS</title>
+    <title>Captions are provided for video with audio - NHS</title>
     <link rel="stylesheet" href="/accessibility-checklist/css/nhsuk-frontend.css">
     <link rel="stylesheet" href="/accessibility-checklist/css/checklist.css">
     <script src="/accessibility-checklist/js/scripts.js" defer></script>
@@ -44,30 +44,25 @@
     </svg>
     Back to checklist</a>
 </div>
-<h1>Keyboard focus does not get trapped</h1>
+<h1>Captions are provided for video with audio</h1>
 <h2>Design Notes</h2>
-<p>None</p>
+<h3>Ensure videos with audio have accurate captions</h3>
+<p>Pre-recorded video content must have captions that are synchronised with the audio content of the video. These captions also need to be accurate so auto-generated captions, such as those provided by YouTube need to be checked and edited for accuracy.</p>
 <h2>Developer Notes</h2>
-<h3>Ensure keyboard focus does not get trapped</h3>
-<p>People using keyboards to navigate and interact with content should be able to do so without the keyboard focus becoming trapped in the content. Make sure all content can be navigated using the Tab key on the keyboard and content which can be entered using the keyboard alone can also be exited this way.</p>
-<h4>Common issues:</h4>
-<ul>
-<li>A modal dialogue can be opened with a keyboard but not closed, preventing the user from reaching/returning to the content in the page behind</li>
-<li>Content is presented in an iframe which generates new content on scroll (aka infinite scroll), — forcing many presses of the Tab key before they can continue their journey.</li>
-</ul>
+<p>None</p>
 <h2>Testing Notes</h2>
-<h3>Keyboard focus does not get trapped</h3>
-<p>If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away</p>
-<h4>Steps to check</h4>
+<h3>Captions are provided for video with audio</h3>
+<p>Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such</p>
+<h4>Steps to check — Captions</h4>
 <ul>
-<li>use the keyboard Tab key to progress through interactive page elements (e.g. links, buttons, form inputs) until you reach the end of the document</li>
-<li>use Shift-Tab to navigate the focus in the reverse direction back to the top of the page</li>
-<li>if you encounter any elements that you can't move away from try the standard exit methods (enter, space bar, escape key) and the arrow keys or follow any instructions provided</li>
-<li>are there any elements that you can't move away from?</li>
+<li>Identify video content</li>
+<li>If video content has audio, confirm captions have been provided</li>
+<li>Confirm if captions accurately convey audio information — including: sound effects, music and other significant background sound (e.g. laughter)</li>
+<li>For closed captions, confirm the control to turn on /off is also accessible e.g. keyboard operable</li>
 </ul>
-<p><strong>Impact range:</strong> Critical</p>
+<p><strong>Impact range:</strong> Medium - High</p>
 <p><strong>Test type:</strong> Manual</p>
-<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap">Understanding Success Criterion 2.1.2 No Keyboard Trap</a></p>
+<p><strong>WCAG Reference:</strong> <a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html">Understanding Success Criterion 1.2.2 Captions (prerecorded)</a></p>
 
 <script>
   if (document.referrer) {
